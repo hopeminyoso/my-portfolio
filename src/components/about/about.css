@@ -1,35 +1,29 @@
 .about__container {
-    display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
-  }
-  
-  .about__me {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-    background: linear-gradient(
-      45deg,
-      transparent,
-      var(--color-primary),
-      transparent
-    );
-    display: grid;
-    place-items: center;
-  }
-  
-  .about__me-image {
-    /* height: 100%; */
-    object-fit: cover;
-    border-radius: 2rem;
-    overflow: hidden;
-    transform: rotate(10deg);
-    transition: var(--transition);
-  }
-  
-  .about__me-image:hover {
-    transform: rotate(0);
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjusted grid columns for better responsiveness */
+  gap: 2rem; /* Increased gap for better spacing */
+}
+
+.about__me {
+  width: 100%;
+  border-radius: 2rem;
+  background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+  display: grid;
+  place-items: center;
+  overflow: hidden; /* Added overflow hidden for container */
+}
+
+.about__me-image {
+  width: 100%; /* Adjusted width for responsiveness */
+  height: auto; /* Allowing the image to resize proportionally */
+  border-radius: 2rem;
+  transform: rotate(10deg);
+  transition: transform var(--transition);
+}
+
+.about__me:hover .about__me-image {
+  transform: rotate(0);
+}
   
   .about__cards {
     display: grid;
@@ -90,21 +84,13 @@
   /* media queries (small devices) */
   
   @media screen and (max-width: 600px) {
+    .about__container {
+      grid-template-columns: 1fr; /* Single column layout on smaller devices */
+      gap: 1rem; /* Adjusted gap for smaller screens */
+    }
+  
     .about__me {
-      width: 65%;
-      margin: 0 auto 3rem;
-    }
-  
-    .about__cards {
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-  
-    .about__content {
-      text-align: center;
-    }
-  
-    .about__content p {
-      margin: 1.5rem;
+      width: 80%; /* Adjusted width for better fit on small screens */
+      margin: 0 auto 2rem; /* Centering and margin adjustment */
     }
   }
