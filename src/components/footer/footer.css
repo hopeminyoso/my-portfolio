@@ -53,8 +53,7 @@ footer {
     color: var(--color-bg);
   }
   
-  /* media queries (small devices) */
-  
+  /* Media queries (small devices) */
   @media screen and (max-width: 600px) {
     .permalinks {
       flex-direction: column;
@@ -64,5 +63,10 @@ footer {
     .footer__socials {
       margin-bottom: 2.6rem;
     }
+  
+    .footer__logo {
+      font-size: 1.6rem; 
+      margin-bottom: 1.5rem;
   }
+}
   

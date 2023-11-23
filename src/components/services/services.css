@@ -58,22 +58,22 @@
 /* Media queries (medium devices) */
 @media screen and (max-width: 1024px) {
   .container.services__container {
-    width: 80%; /* Adjusted width for better fit on medium screens */
+    width: 80%;
   }
   
   .service {
-    width: calc(50% - 20px); /* Adjusted width for better fit on medium screens */
+    width: calc(50% - 20px); 
   }
 }
 
 /* Media queries (small devices) */
 @media screen and (max-width: 600px) {
   .container.services__container {
-    width: 90%; /* Adjusted width for better fit on small screens */
+    width: 90%; 
   }
 
   .service {
-    width: 100%; /* Full width on small screens */
+    width: 100%; 
   }
 }
 
