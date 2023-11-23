@@ -81,16 +81,10 @@
       margin: 1rem 0 1.5rem;
     }
   }
-  /* media queries (small devices) */
-  
-  @media screen and (max-width: 600px) {
-    .about__container {
-      grid-template-columns: 1fr; /* Single column layout on smaller devices */
-      gap: 1rem; /* Adjusted gap for smaller screens */
-    }
-  
-    .about__me {
-      width: 80%; /* Adjusted width for better fit on small screens */
-      margin: 0 auto 2rem; /* Centering and margin adjustment */
-    }
+  /* Media queries (small devices) */
+@media screen and (max-width: 600px) {
+  .about__me {
+    width: 90%; /* Adjusted width for better fit on small screens */
+    margin: 0 auto 1.5rem; /* Margin adjustment for centering and spacing */
   }
+}
