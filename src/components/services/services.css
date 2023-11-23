@@ -55,25 +55,25 @@
   font-size: 0.8rem;
 }
 
-/* media queries (medium devices) */
+/* Media queries (medium devices) */
 @media screen and (max-width: 1024px) {
   .container.services__container {
-    width: 60%;
-    /* grid-template-columns: 1fr 1fr;
-    gap: 2rem; */
+    width: 80%; /* Adjusted width for better fit on medium screens */
+  }
+  
+  .service {
+    width: calc(50% - 20px); /* Adjusted width for better fit on medium screens */
+  }
+}
+
+/* Media queries (small devices) */
+@media screen and (max-width: 600px) {
+  .container.services__container {
+    width: 90%; /* Adjusted width for better fit on small screens */
   }
 
   .service {
-    height: auto;
+    width: 100%; /* Full width on small screens */
   }
 }
 
-/* media queries (small devices) */
-
-@media screen and (max-width: 600px) {
-  .container.services__container {
-    width: var(--container-width-sm);
-    /* grid-template-columns: 1fr;
-    gap: 2rem; */
-  }
-}
