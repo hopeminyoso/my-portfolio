@@ -16,11 +16,11 @@ function Contact(props) {
         "service_zxndtwz",
         "template_q53k2mg",
         form.current,
-        "WyknJBc6oZqonr4Xf"
+        "OXUse1hU80LUJKkmu"
       )
       .then(
         (result) => {
-          alert("message sucesfully sent");
+          alert("message sent sucessfully");
         },
         (error) => {
           alert("An error occurred! Please try again");
