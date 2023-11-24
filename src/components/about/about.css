@@ -81,10 +81,29 @@
       margin: 1rem 0 1.5rem;
     }
   }
-  /* Media queries (small devices) */
+  /* Media queries (tablet) */
+@media screen and (max-width: 768px) {
+  .about__me {
+    width: 70%;
+  }
+
+  /* Adjust font sizes or paddings if necessary */
+}
+
 @media screen and (max-width: 600px) {
   .about__me {
-    width: 90%; /* Adjusted width for better fit on small screens */
-    margin: 0 auto 1.5rem; /* Margin adjustment for centering and spacing */
+    width: 90%;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr; /* Adjust grid for single column */
+  }
+
+  .about__me-image img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+  }
+
+  .about__cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible card layout */
   }
 }
