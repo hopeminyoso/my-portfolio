@@ -14,7 +14,7 @@ function Contact(props) {
     emailjs
       .sendForm(
         "service_zxndtwz",
-        "template_xul9jja",
+        "template_q53k2mg",
         form.current,
         "WyknJBc6oZqonr4Xf"
       )
