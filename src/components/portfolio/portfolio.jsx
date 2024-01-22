@@ -1,54 +1,17 @@
 import React from "react";
 import "./portfolio.css";
+import IMG1 from "../../assets/IMG1.png"; 
 
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 
-    github: 
-    site: 
+    title: "Patient Registration App",
+    github: "https://github.com/hopeminyoso/patient-registration",
     description:
-     
+    "This project features a web application and RESTful backend for streamlined patient management. It captures initial patient details and records visit information, with specialized sections based on BMI. The backend supports crucial endpoints, ensuring secure data handling. This project highlights my proficiency in creating an efficient solution for registering patients and managing healthcare data through RESTful APIs.",
   },
-  {
-    id: 2,
-    image: IMG2,
-    title: 
-    github: 
-    site:
-    description:
-      
-  },
-  {
-    id: 3,
-    image: IMG3,
-    title: 
-    github: 
-    site: 
-    description:
-      
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: 
-    github: 
-    site: 
-    description:
-      
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 
-    github: 
-    site: 
-    description:
-    
-  },
-  
 ];
 
 const Portfolio = () => {
@@ -65,7 +28,7 @@ const Portfolio = () => {
               </div>
               <h3>{title}</h3>
               <div className="description">{description}</div>
-              <div className="porfolio__item-cta">
+              <div className="portfolio__item-cta">
                 <a
                   href={github}
                   target="_blank"

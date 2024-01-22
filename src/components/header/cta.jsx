@@ -1,6 +1,6 @@
 import React from "react";
 // import CV from "../../assets/ShirleyResume.pdf";
-import CV from "../../assets/HOPE SHIRLEY MINYOSO updated resume.pdf";
+import CV from "../../assets/HOPE SHIRLEY CV.pdf";
 
 const CTA = () => {
   return (
